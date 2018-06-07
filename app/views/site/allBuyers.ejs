@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>API DESAFIO</title>
+  </head>
+  <body>
+    <h1>Mostrando todos resultados</h1>
+
+    <p><% for(var chave in compra){  %>
+    <%= compra[chave].nome %> - <%= compra[chave].email  %> - <%= compra[chave].cpf %>
+    <%= compra[chave].amount %> - <%= compra[chave].type  %> - <%= compra[chave].card %>
+    <%= compra[chave].cardholder %> - <%= compra[chave].cardnumber  %> <%= compra[chave].cardexpiration %> - <%= compra[chave].cvv  %>
+
+    <% } %></p>
+    <br>
+    <% if(erros){ %>
+    <ul>
+      <% for(var k in  erros){ %>
+      <li><%= erros[k].msg  %></li>
+      <% } %>
+    </ul>
+    <% } %>
+
+  </body>
+</html>

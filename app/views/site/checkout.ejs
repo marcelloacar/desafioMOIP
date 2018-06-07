@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CHECKOUT</title>
+  </head>
+  <body>
+    <h1>Página CHECKOUT</h1>
+    <br>
+
+    <form action="/" method="post">
+      <input type="text" name="idClient" placeholder="idClient" value="<%= dados.idClient %>"><br>
+
+      <input type="text" name="name" placeholder="Nome" value="<%= dados.name %>">
+      <input type="text" name="email" placeholder="E-mail" value="<%= dados.email %>">
+      <input type="text" name="cpf" placeholder="CPF" value="<%= dados.cpf %>"><br>
+
+      <input type="text" name="amount" placeholder="Valor" value="<%= dados.amount %>">
+      <input type="text" name="type" placeholder="Tipo de Pagamento" value="<%= dados.type %>">
+      <input type="text" name="card" placeholder="Cartao" value="<%= dados.card %>"><br>
+
+      <input type="text" name="carholder" placeholder="Nome do Portador" value="<%= dados.carholder %>">
+      <input type="text" name="cardnumber" placeholder="Numero do Cartao" value="<%= dados.cardnumber %>">
+      <input type="text" name="cardexpiration" placeholder="Data de Validade" value="<%= dados.cardexpiration %>">
+      <input type="text" name="cvv" placeholder="Codigo CVV" value="<%= dados.cvv %>"><br>
+      <button>Comprar</button>
+
+    </form>
+
+  </body>
+</html>
